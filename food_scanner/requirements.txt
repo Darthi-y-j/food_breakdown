@@ -1,0 +1,7 @@
+fastapi
+python-multipart
+uvicorn
+python-dotenv
+openai
+pydantic
+typing-extensions
