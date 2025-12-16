@@ -480,5 +480,6 @@ async def edit_food_breakdown(
         raise HTTPException(status_code=500, detail=f"Error processing edit request: {str(e)}")
 
 if __name__ == "__main__":
+    port = int(os.getenv("PORT", 8000))
     logger.info("Starting FastAPI application")
-    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run("main:app", host="0.0.0.0", port=port, reload=True)
